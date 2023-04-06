@@ -18,6 +18,10 @@ COMMIT TRAN
 
 /*3. Delete Voter*/
 BEGIN TRAN
+DELETE FROM TotalVotes
+WHERE VoterID = 2;
+DELETE FROM Admin
+WHERE VoterID = 2;
 DELETE FROM Voter
 WHERE VoterID = 2;
 /*Commit Question 3*/
